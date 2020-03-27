@@ -1,6 +1,6 @@
 # SoundVisualization
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
+Live visualization of sound . See example on [Github Pages](https://yoseftuk.github.io/sound-visualization/build)
 
 ## Development server
 

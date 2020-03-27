@@ -1,0 +1,18 @@
+@mixin keyframes($title){
+
+  @-moz-keyframes #{$title} {
+    @content;
+  }
+  @-o-keyframes #{$title} {
+    @content;
+  }
+  @-ms-keyframes #{$title} {
+    @content;
+  }
+  @-webkit-keyframes #{$title} {
+    @content;
+  }
+  @keyframes #{$title} {
+    @content;
+  }
+}

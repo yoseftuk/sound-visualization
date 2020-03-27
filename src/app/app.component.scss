@@ -1,0 +1,60 @@
+@import "scss/index";
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+#actions {
+  position: absolute;
+  bottom: 0;
+  left : 0;
+  width: 100%;
+}
+#sounds, #types {
+  @extend %flex-center;
+}
+.track, .type {
+  @extend %input;
+  border: 1px solid white;
+  @include border-radius(4px);
+  padding: 6px 14px;
+  color: white;
+  background-color: #919191;
+  margin: 14px 7px;
+  @include transition(all .5s ease);
+  cursor: pointer;
+  &:hover, &.active {
+    background-color: white;
+    color: black;
+  }
+}
+
+#play-pause {
+  @extend %abs-center;
+  @extend %input;
+  @extend %flex-center;
+  background-color: transparent;
+  color: white;
+  text-shadow: 0 0 2px black, 0 0 4px black, 0 0 6px black;
+  width: 1px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 28pt;
+  cursor: pointer;
+}
+#credits {
+  position: fixed;
+  bottom: 14px;
+  right: 14px;
+  color: #ffffff88;
+  font-family: sans-serif;
+  font-size: 10pt;
+  a {
+    color: #ffffff88;
+    @include transition(all .3s ease);
+    &:hover {
+      color: white;
+    }
+  }
+}

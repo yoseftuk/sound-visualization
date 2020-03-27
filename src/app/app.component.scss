@@ -20,7 +20,7 @@ canvas {
   @include border-radius(4px);
   padding: 6px 14px;
   color: white;
-  background-color: #919191;
+  background-color: #414141;
   margin: 14px 7px;
   @include transition(all .5s ease);
   cursor: pointer;
@@ -66,5 +66,13 @@ canvas {
   #credits {
     top: 14px;
     bottom: auto;
+  }
+  .track, .type {
+    margin: 2px 4px;
+    padding: 4px 8px;
+    font-size: 10pt;
+  }
+  #sounds {
+    margin-bottom: 8px;
   }
 }

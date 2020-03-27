@@ -58,3 +58,13 @@ canvas {
     }
   }
 }
+@media all and (max-width: 520px) {
+  #sounds, #types {
+    display: block;
+    text-align: center;
+  }
+  #credits {
+    top: 14px;
+    bottom: auto;
+  }
+}

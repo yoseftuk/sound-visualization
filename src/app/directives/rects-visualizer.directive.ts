@@ -16,7 +16,7 @@ export class RectsVisualizerDirective extends VisualizerDirective {
     this.ctx.fillStyle = 'blue';
     const rows = 25;
     const columns = Math.ceil(dataL.length / rows / 4);
-    const space = 10;
+    const space = this.canvas.width > 750 ? 10 : 0;
     const w = (this.canvas.width - space * (columns + 1)) / columns;
     const h = (this.canvas.height - space * (rows + 1)) / rows;
     for (let row = 0; row < rows; row++) {
